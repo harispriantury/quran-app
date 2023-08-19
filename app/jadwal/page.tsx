@@ -134,7 +134,7 @@ const JadwalSholat = () => {
             <div className="flex justify-between mt-5 items-center">
                 <select
                     value={selectedCity}
-                    className='bg-white text-greenDark p-2 rounded-lg outline-none no-scrollbar max-md:text-sm max-md:w-1/2'
+                    className='bg-white border border-greenDark text-greenDark p-2 rounded-lg outline-none no-scrollbar max-md:text-sm max-md:w-1/2'
                     onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setSelectedCity(e.target.value)}>
                     {
                         cities &&
@@ -170,7 +170,7 @@ const JadwalSholat = () => {
                             })}
                         </tr>
                     </thead>
-                    <tbody className="text-center">
+                    <tbody className="text-center text-black">
                         {
                             datas?.jadwal.map((item, index) => {
                                 return (
